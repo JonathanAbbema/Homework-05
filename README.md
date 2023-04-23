@@ -5,7 +5,8 @@ The calender header consists of the current time and date.
 Events are listed from earliest in the day to the latest. 
 Events identify the waht items are in then past present and the future. 
 The application uses persitive data so all data entered in the text area is saved in the local storage. 
-The application is ran using the following URL: <a href="https://jonathanabbema.github.io/Homework-05/">
+The application is ran using the following URL: 
+<a href="https://jonathanabbema.github.io/Homework-05/">
 
 <img src= ./assets/Application.png>
 
