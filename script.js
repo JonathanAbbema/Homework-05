@@ -5,18 +5,18 @@ var textarea = $('.textAreaBorder');
 var timeBlock = $('.hour');
 
 function displayTime () {
-    var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
+    var rightNow = moment().format('hh:mm:ss a');
     currentTimeEl.text(rightNow);
 }
 
 function setHourColors() {
     for (var i= 9; i < 19; i++ ) {
         if (i < currentTimeEl) {
-            $("#hour-"+ i + timeBlock.value()).addClass(".past");
+            $(".hour"+ i + hour).css("background-color", "rgb(122, 242, 154)");
         } else if (i == currentTimeEl) {
-            $("#hour-" + i + timeBlock.value()).addClass(".present");
+            $(".hour" + i + hour).addClass(".present");
         } else if (i > currentTimeEl) {
-            $("#hour-" + i + timeBlock.value()).addClass(".future");
+            $(".hour" + i + hour).addClass(".future");
         }
     }
 }
